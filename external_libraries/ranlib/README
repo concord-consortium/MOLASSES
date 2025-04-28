@@ -2,7 +2,6 @@ To compile and install:
 
 gcc -c rnglib.c
 gcc -c ranlib.c
-ar rcs ranlib.a rnglib.o ranlib.o
-cp *.h ../include/
-cp ranlib.a ../lib/
-
+ar rcs libran.a rnglib.o ranlib.o
+cp *.h ../../include/
+cp libran.a ../../lib/

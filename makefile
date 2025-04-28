@@ -41,9 +41,9 @@ export aoi         =
 # Linking and compiling variables
 # Alter as needed for your system.
 export CC	= gcc
-export INSTALLPATH	= .
-export GDAL_INCLUDE_PATH = /usr/include/gdal
-# export GDAL_LIB_PATH =
+export HOME	= ..
+export GDAL_INCLUDE_PATH = /opt/homebrew/include
+export GDAL_LIB_PATH = /opt/homebrew/lib
 
 all clean check install uninstall molasses:
 	$(MAKE) -C src $@

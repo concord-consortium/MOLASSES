@@ -18,7 +18,7 @@
 
 # Libraries
 *.lib
-# *.a
+*.a
 *.la
 *.lo
 
@@ -51,4 +51,6 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+flow_*
+molasses_2022
 test/

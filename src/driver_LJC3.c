@@ -450,7 +450,7 @@ int main(int argc, char *argv[]) {
 		    fprintf(stdout, " Total (OUT) volume found in cells:     %12.3f\n\n", volumeErupted);
 
 		    total = volumeErupted - ActiveFlow.volumeToErupt;
-		    if(abs(total) > 1e-8) fprintf(stderr, " ERROR: MASS NOT CONSERVED! Excess: %12.3f\n", total);
+		    if(fabs(total) > 1e-8) fprintf(stderr, " ERROR: MASS NOT CONSERVED! Excess: %12.3f\n", total);
 		    fprintf(stderr, "----------------------------------------\n");
 		
 		    /* Save the flow thickness for each run to a file */
